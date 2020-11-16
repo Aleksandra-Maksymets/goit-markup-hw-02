@@ -15,7 +15,9 @@ background: #F5F4FA; цвет фона секции наша команда
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
+  --hero-text-color: #ffffff;
   --address-text-color: #ffffff;
+  --primary-button-text: #ffffff;
   --footer-link-color: rgba(255, 255, 255, 0.6);
   --logo-color: #000000;
   --primary-background-color: #ffffff;
@@ -95,3 +97,28 @@ body {
 }
 
 /* hero */
+.hero {
+  background-color: var(--secondary-background-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--hero-text-color);
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-button-text);
+  background-color: var(--accent-color);
+}
