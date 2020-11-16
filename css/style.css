@@ -215,3 +215,38 @@ body {
 .footer-contact:hover {
   color: var(--primary-accent-color);
 }
+
+/* Portfolio page */
+/* filter */
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  cursor: pointer;
+  color: var(--secondary-accent-color);
+  background-color: var(--primary-accent-color);
+}
+
+/* Examples */
+.example-card h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-text-color);
+}
+
+.example-card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}

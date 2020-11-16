@@ -42,40 +42,59 @@
 
     <!-- main content of a portfolio page-->
     <main>
-      <section class="portfolio">
+      <section>
         <!-- <h1 class="portfolio-title">Примеры наших работ</h1> -->
-
         <!-- Filter -->
+        <!-- <form>
+          <input type="radio" id="all" name="filter" value="all" checked />
+          <label for="all"><span class="filter-name">Все</span></label
+          ><br />
+          <input type="radio" id="web-sites" name="filter" value="web-sites" />
+          <label for="web-sites">Веб-сайты</label><br />
+          <input type="radio" id="apps" name="filter" value="apps" />
+          <label for="apps">Приложения</label><br />
+          <input type="radio" id="design" name="filter" value="design" />
+          <label for="design">Дизайн</label><br />
+          <input type="radio" id="marketing" name="filter" value="marketing" />
+          <label for="marketing">Маркетинг</label>
+        </form> -->
+
         <ul class="filter list">
-          <li class="filter-button link">
-            <input type="radio" id="all" name="filter" value="all" checked />
-            <label for="all">Все</label>
+          <li>
+            <input
+              type="radio"
+              id="all"
+              name="filter"
+              value="all"
+              checked="checked"
+            />
+            <label for="all" class="filter-button">Все</label>
           </li>
-          <li class="filter-button link">
+          <li>
             <input
               type="radio"
               id="web-sites"
               name="filter"
               value="web-sites"
             />
-            <label for="web-sites">Веб-сайты</label>
+            <label for="web-sites" class="filter-button">Веб-сайты</label>
           </li>
-          <li class="filter-button link">
+          <li>
             <input type="radio" id="apps" name="filter" value="apps" />
-            <label for="apps">Приложения</label>
+            <label for="apps" class="filter-button">Приложения</label>
           </li>
-          <li class="filter-button link">
+          <li>
             <input type="radio" id="design" name="filter" value="design" />
-            <label for="design">Дизайн</label>
+            <label for="design" class="filter-button">Дизайн</label>
           </li>
-          <li class="filter-button link">
+          <li>
             <input
               type="radio"
               id="marketing"
               name="filter"
               value="marketing"
             />
-            <label for="marketing">Маркетинг</label>
+            <label for="marketing" class="filter-button">Маркетинг</label>
           </li>
         </ul>
 
@@ -141,7 +160,7 @@
               <p>Приложение</p>
             </a>
           </li>
-          <li class="work-example">
+          <li class="example-card">
             <a href="#" class="link">
               <img
                 src="./images/inspiration.jpg"
@@ -153,7 +172,7 @@
               <p>Веб-сайт</p>
             </a>
           </li>
-          <li class="work-example">
+          <li class="example-card">
             <a href="#" class="link">
               <img
                 src="./images/limited-edition.jpg"
@@ -165,7 +184,7 @@
               <p>Дизайн</p>
             </a>
           </li>
-          <li class="work-example">
+          <li class="example-card">
             <a href="#" class="link">
               <img
                 src="./images/lab.jpg"
@@ -177,7 +196,7 @@
               <p>Маркетинг</p>
             </a>
           </li>
-          <li class="work-example">
+          <li class="example-card">
             <a href="#" class="link">
               <img
                 src="./images/growing-business.jpg"
