@@ -1,12 +1,97 @@
 /* Палитра
 color: #212121; цвет основного текста
 color: #757575; цвет текста второстепенный
-color: rgba(255, 255, 255, 0.6); для ссылок в футере
-color: #FFFFFF; для адреса
 color: #2196F3; цвет акцента
+color: #FFFFFF; для адреса
+color: rgba(255, 255, 255, 0.6); для ссылок в футере
+color: #000000; цвет лого 2й части
+
+background: #FFFFFF; основной
+background: #2F303A; цвет фона hero и футера
+background: #F5F4FA; цвет фона секции наша команда
  */
 
-body {
-  color: #212121;
-  font-family: Roboto;
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --address-text-color: #ffffff;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --logo-color: #000000;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --section-background-color: #f5f4fa;
 }
+
+/* Main features */
+
+body {
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+
+  background-color: var(--primary-background-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* header */
+/* Лого */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: #000000;
+}
+.logo span {
+  color: var(--accent-color);
+}
+
+.logo:focus,
+.logo:hover {
+  text-decoration: underline;
+}
+
+/* Main links */
+.main-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.main-nav a:visited {
+  color: var(--primary-text-color);
+}
+
+.main-nav .link:hover,
+.main-nav .link:focus .contacts-nav .link:focus,
+.contacts-nav .link:hover {
+  color: var(--accent-color);
+}
+
+.main-nav .current .link {
+  color: var(--accent-color);
+}
+.main-nav .current .link:hover {
+  text-decoration: underline;
+}
+
+/* contacts navigation */
+.contacts-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color);
+}
+
+/* hero */

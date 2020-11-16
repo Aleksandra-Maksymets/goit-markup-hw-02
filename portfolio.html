@@ -15,30 +15,42 @@
   <body>
     <!-- Header of a page -->
     <header>
+      <!-- Navigation -->
       <nav>
-        <a href="#"><span>Web</span>Studio</a>
-        <ul>
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="#">Портфолио</a></li>
-          <li><a href="#">Контакты</a></li>
+        <!-- logo -->
+        <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
+        <!-- Main links -->
+        <ul class="main-nav list">
+          <li><a href="./index.html" class="link">Студия</a></li>
+          <li class="current">
+            <a href="./portfolio.html" class="link">Портфолио</a>
+          </li>
+          <li><a href="#" class="link">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <!-- Contacnts -->
+      <ul class="contacts-nav list">
+        <li>
+          <a href="mailto:info@devstudio.com" class="link"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
       </ul>
     </header>
 
     <!-- main content of a portfolio page-->
     <main>
-      <section>
-        <!-- <h1>Примеры наших работ</h1> -->
-        <ul>
-          <li>
+      <section class="portfolio">
+        <!-- <h1 class="portfolio-title">Примеры наших работ</h1> -->
+
+        <!-- Filter -->
+        <ul class="filter list">
+          <li class="filter-button link">
             <input type="radio" id="all" name="filter" value="all" checked />
             <label for="all">Все</label>
           </li>
-          <li>
+          <li class="filter-button link">
             <input
               type="radio"
               id="web-sites"
@@ -47,15 +59,15 @@
             />
             <label for="web-sites">Веб-сайты</label>
           </li>
-          <li>
+          <li class="filter-button link">
             <input type="radio" id="apps" name="filter" value="apps" />
             <label for="apps">Приложения</label>
           </li>
-          <li>
+          <li class="filter-button link">
             <input type="radio" id="design" name="filter" value="design" />
             <label for="design">Дизайн</label>
           </li>
-          <li>
+          <li class="filter-button link">
             <input
               type="radio"
               id="marketing"
@@ -65,9 +77,11 @@
             <label for="marketing">Маркетинг</label>
           </li>
         </ul>
-        <ul>
-          <li>
-            <a href="#">
+
+        <!-- блок примеров работ -->
+        <ul class="works list">
+          <li class="work-example">
+            <a href="#" class="link">
               <img
                 src="./images/technokryak.jpg"
                 alt="Изображение сайта Технокряк на экране ноутбука"
@@ -78,8 +92,8 @@
               <p>Веб-сайт</p>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="work-example">
+            <a href="#" class="link">
               <img
                 src="./images/poster.jpg"
                 alt="игрок из баскетбольной команды Golden Star пытается отобрать мяч у игрока из команды New Orlean"
@@ -90,8 +104,8 @@
               <p>Дизайн</p>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="work-example">
+            <a href="#" class="link">
               <img
                 src="./images/seafood.jpg"
                 alt="Логотип ресторана Seafood с рыбой"
@@ -102,8 +116,8 @@
               <p>Приложение</p>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="work-example">
+            <a href="#" class="link">
               <img
                 src="./images/prime.jpg"
                 alt="Черные наушники"
@@ -114,8 +128,8 @@
               <p>Маркетинг</p>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="work-example">
+            <a href="#" class="link">
               <img
                 src="./images/boxes.jpg"
                 alt="одна белая коробка побольше и одна коричневая коробка поменьше"
@@ -126,8 +140,8 @@
               <p>Приложение</p>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="work-example">
+            <a href="#" class="link">
               <img
                 src="./images/inspiration.jpg"
                 alt="темный Веб-сайт на экране монитора"
@@ -138,8 +152,8 @@
               <p>Веб-сайт</p>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="work-example">
+            <a href="#" class="link">
               <img
                 src="./images/limited-edition.jpg"
                 alt="Разворот журнала со статьей I'm limited edition"
@@ -150,8 +164,8 @@
               <p>Дизайн</p>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="work-example">
+            <a href="#" class="link">
               <img
                 src="./images/lab.jpg"
                 alt="Белый ярлык с надписью Lab el tag"
@@ -162,8 +176,8 @@
               <p>Маркетинг</p>
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li class="work-example">
+            <a href="#" class="link">
               <img
                 src="./images/growing-business.jpg"
                 alt="Человек использует интернет-приложения growing business на ноутбуке"
@@ -180,12 +194,20 @@
 
     <!-- Footer of a page -->
     <footer>
-      <a href="#"><span>Web</span>Studio</a>
+      <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
       <address>
-        <ul>
-          <li>г. Киев, пр-т Леси Украинки, 26</li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="list">
+          <li class="footer-address">г. Киев, пр-т Леси Украинки, 26</li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="footer-mail link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="footer-tel link"
+              >+38 096 111 11 11</a
+            >
+          </li>
         </ul>
       </address>
     </footer>
