@@ -228,9 +228,20 @@ body {
 
 .filter-button:hover,
 .filter-button:focus {
-  cursor: pointer;
   color: var(--secondary-accent-color);
   background-color: var(--primary-accent-color);
+}
+
+.filter .current {
+  color: var(--secondary-accent-color);
+  background-color: var(--primary-accent-color);
+}
+
+.filter .current:hover,
+.filter .current:focus {
+  color: var(--primary-accent-color);
+  background-color: var(--secondary-accent-color);
+  border: solid 2px var(--primary-accent-color);
 }
 
 /* Examples */
